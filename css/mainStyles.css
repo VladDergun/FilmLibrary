@@ -1,11 +1,7 @@
-﻿* {
-    scrollbar-width: initial;
-    scrollbar-color: #2b2b2b #161616; /* thumb color track color */
-}
-
+﻿
 /* WebKit (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 20px; /* width of the scrollbar */
+    width: 10px; /* width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
@@ -152,7 +148,7 @@
     font-family: sans-serif;
     font-weight: bold;
     color: white;
-    padding-bottom:100px;
+    padding-bottom:20px;
 }
 .main-movie {
     margin-top: 80px;
@@ -184,12 +180,11 @@
     display: flex;
 }
 .movie-overview {
-    padding-top: 40px;
+    padding-top: 5px;
     font-size: 18px;
     width: 80%;
     text-indent: 20px;
     color: white;
-    padding-bottom: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .movie-content{
@@ -234,6 +229,66 @@
     margin-left:30px;
     margin-bottom:30px;
 }
+.cast {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: -webkit-fill-available;
+}
+.cast-text {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.cast-box {
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+
+    margin: 60px auto 30px;
+}
+    .cast-box::-webkit-scrollbar {
+        height: 15px;
+        min-width:1px;
+    }
+    .cast-box::-webkit-scrollbar-thumb {
+        background: #ffffff1a;
+        border-radius: 10px;
+    }
+        /* Individual cast member container */
+.cast-member {
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+height: fit-content;
+}
+
+/* Style for cast images */
+.cast-img img {
+    width: 133px;
+    height: 200px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.cast-cred {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.cast-name, .cast-char{
+    text-align: center;
+    margin: 0;
+    font-size:18px;
+    font-family:sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+.cast-char {
+    color: #ffa500;
+}
+
 @media only screen and (max-width: 1000px) {
     .main-content {
         display: flex;
@@ -259,6 +314,50 @@
         display: flex;
         flex-direction: column;
     }
+    .cast-img img {
+        width: 133px;
+        height: 200px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+    .cast-box {
+        display: flex;
+        gap: 30px;
+        overflow-x: scroll;
+        max-width: 550px;
+        margin: 60px auto 60px;
+    }
+    .cast-box::-webkit-scrollbar {
+        height: 15px;
+        width:30px;
+    }
+    .cast-cred {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .cast-name, .cast-char {
+        text-align: center;
+        margin: 0;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    }
+    .cast-text {
+
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+    .cast-char {
+        color: #ffa500;
+    }
+
+    
+
 }
 @media only screen and (max-width: 600px) {
 
@@ -370,6 +469,54 @@
         font-weight: bold;
         color: white;
     }
+   .cast{
+       margin-left:20px;
+   }
+    .cast-img img {
+        width: 80px;
+        height: 130px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+    }
+
+    .cast-box {
+        display: flex;
+        gap: 15px;
+        overflow-x: scroll;
+        
+        margin: 30px auto 30px;
+    }
+
+        .cast-box::-webkit-scrollbar {
+            height: 15px;
+            
+        }
+
+    .cast-cred {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .cast-name, .cast-char {
+        text-align: center;
+        margin: 0;
+        font-size: 16px;
+        font-family: sans-serif;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    }
+    .cast-text {
+
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+    .cast-char {
+        color: #ffa500;
+    }
+
 
 }
 @media only screen and (max-width: 580px) {
@@ -445,8 +592,31 @@
         color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    .cast {
+        margin-top: 30px;
+        margin-left: 20px;
+        width: -webkit-fill-available;
+    }
+    .cast-box {
+        display: flex;
+        gap: 15px;
+        overflow-x: scroll;
+
+        margin: 30px auto 30px;
+    }
+    .cast-text {
+        
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+    .cast-char {
+        color: #ffa500;
+    }
+
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
     .movie-img-details {
         justify-content: center;
         display: flex;
@@ -499,5 +669,23 @@
         color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    .cast-box {
+        display: flex;
+        gap: 15px;
+        overflow-x: scroll;
+
+        margin: 30px auto 30px;
+    }
+    .cast-text {
+        
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+    .cast-char {
+        color: #ffa500;
+    }
+
 
 }
