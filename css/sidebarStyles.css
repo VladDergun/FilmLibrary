@@ -1,77 +1,131 @@
 ﻿.header-sidebar-btn{
-    padding-right:30px;
-    color:wheat;
+    display:none;
 }
+
 .side-bar {
-    padding-right: 0;
-    position: fixed; /* Position the sidebar */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    width: 300px; /* Adjust width as needed */
-    background-color: #1d1e20;
-    /* Background color */
+    display: none;
+}
+.categories-title{
+    height:80px;
+    margin-bottom:40px;
+}
+.categories-box {
+    position: absolute;
+    top: 75%; /* Position the menu just below the "Categories" link */
+    left: 400px; /* Position the menu horizontally centered */
+    transform: translateX(-50%); /* Center the menu horizontally */
+    background-color: #333333;
+    padding: 10px;
+    padding-top:15px;
     color:white;
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    z-index: 1200;
-    height: 100%;
+    z-index: 1000; /* Ensure the menu appears above other content */
 }
 
-.sidebar-body {
-    padding-top: 10px;
-    
-    /* Optional: If you want to limit the height and enable scrolling */
-    padding-bottom: 100px;
-    height: 100%;
-    overflow-y: auto;
+.categories-body {
+    width:400px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    text-align: center;
 }
 
-.sidebar-name {
-    padding-bottom:20px;
-    padding-left: 20px;
-    font-family:sans-serif;
-    font-size: 25px; /* Font size for category title */
-    font-weight: bold; /* Bold font weight */
-    margin-bottom: 10px; /* Spacing below title */
+
+
+.categories-category {
+    width:30%;
+    text-align:left;
+    cursor:pointer;
+    padding: 5px;
+    transition:0.2s ease-in;
 }
-
-.sidebar-category {
-    margin-bottom: 10px; /* Spacing between categories */
-    border-bottom: 1px solid black;
-    
-}
-
-.sidebar-btn {
-    display: block; /* Display as block to take full width */
-
-
-    width: 100%; /* Full width */
-    padding: 10px; /* Padding inside button */
-    border: none; /* No border */
-    
-    background-color: #1d1e20; /* Background color */
-    color: white; /* Text color */
-    font-size:22px;
-    text-align: left; /* Align text to the left */
-    cursor: pointer; /* Show pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-    .sidebar-btn:hover {
-        background-color: #3d3d3d; /* Darker background color on hover */
+    .categories-category:hover {
+        color: #ffa500;
     }
-.overlay{
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    z-index:900;
-    opacity:0.3;
-    background-color:black;
-}
-.hs-btn{
-    background-color:inherit;
-    color:white;
-    border:none;
+@media only screen and (max-width: 800px) {
+    .categories-title{
+        display:none;
+    }
+    .categories-btn {
+        display: none;
+    }
+    .header-sidebar-btn {
+        padding-right: 30px;
+        color: wheat;
+        display:block;
+    }
+
+    .side-bar {
+        display:block;
+        padding-right: 0;
+        position: fixed; /* Position the sidebar */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        width: 300px; /* Adjust width as needed */
+        background-color: #1d1e20;
+        /* Background color */
+        color: white;
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        z-index: 1200;
+        height: 100%;
+    }
+
+    .sidebar-body {
+        padding-top: 10px;
+        /* Optional: If you want to limit the height and enable scrolling */
+        padding-bottom: 100px;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .sidebar-name {
+        padding-bottom: 20px;
+        padding-left: 20px;
+        font-family: sans-serif;
+        font-size: 25px; /* Font size for category title */
+        font-weight: bold; /* Bold font weight */
+        margin-bottom: 10px; /* Spacing below title */
+    }
+
+    .sidebar-category {
+        margin-bottom: 10px; /* Spacing between categories */
+        border-bottom: 1px solid black;
+    }
+
+    .sidebar-btn {
+        display: block; /* Display as block to take full width */
+
+
+        width: 100%; /* Full width */
+        padding: 10px; /* Padding inside button */
+        border: none; /* No border */
+
+        background-color: #1d1e20; /* Background color */
+        color: #ffa500; /* Text color */
+        font-size: 22px;
+        text-align: left; /* Align text to the left */
+        cursor: pointer; /* Show pointer on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+        .sidebar-btn:hover {
+            background-color: #3d3d3d; /* Darker background color on hover */
+        }
+
+    .overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        opacity: 0.3;
+        background-color: black;
+    }
+
+    .hs-btn {
+        background-color: inherit;
+        color: white;
+        border: none;
+    }
 }

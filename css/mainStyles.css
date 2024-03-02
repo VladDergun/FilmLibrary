@@ -64,6 +64,7 @@
 
 .film-box:hover {
     transform: scale(1.1); /* Scale up on hover */
+    z-index: 40;
 }
 
 .film-name {
