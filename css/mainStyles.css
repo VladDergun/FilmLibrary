@@ -288,7 +288,20 @@ height: fit-content;
 .cast-char {
     color: #ffa500;
 }
-
+.trailer-box {
+    display: flex;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: -webkit-fill-available;
+    flex-direction: column;
+}
+.trailer {
+    display: flex;
+    justify-content: center;
+}
+    
 @media only screen and (max-width: 1000px) {
     .main-content {
         display: flex;
@@ -516,8 +529,10 @@ height: fit-content;
     .cast-char {
         color: #ffa500;
     }
-
-
+    .trailer-box {
+        margin-left: 20px;
+    }
+    
 }
 @media only screen and (max-width: 580px) {
     .main-movie {
