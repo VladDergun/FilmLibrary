@@ -1,7 +1,7 @@
 {
   "entryAssembly": "FilmLibrary",
   "resources": {
-    "hash": "sha256-zhLbLAkwR2S08vufMHJuibv+EXWCzHoqGNkOYJ5dad8=",
+    "hash": "sha256-ocMRMPIeluRCWr4lt7VwHigRNfyxq9u0e1hXnAoGvpc=",
     "runtime": {
       "dotnet.7.0.16.unh9hasx2m.js": "sha256-F8lwjaVPMjAYJ0euy2kZ7fRuh2vr0eT6miTFbzMhalQ=",
       "dotnet.timezones.blat": "sha256-rwyJqJu36keQwNmm/O1XV7tnkkVldIOK8GIjn4gTUt4=",
@@ -11,7 +11,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "FilmLibrary.dll": "sha256-Ga8vvEpvBm2WzydrlEfAe0Br9DOwanEU75jtrNzBxUA=",
+      "FilmLibrary.dll": "sha256-I0hNJ+vGBOc7wqTIynlaP37tXXBVG91T8qO9NHeUQzs=",
       "Microsoft.AspNetCore.Components.dll": "sha256-8o+n5KvH4SpYhrhkv9n7OKDKtR1R+xGpIbKsXsveLfA=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-ReOFfE/LNX9luS4AmBUK48E6M1NP3ETLBtseqIsH5XA=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-hGzdMxiOwvtvNnQ2IQ2VPBLqX+4tAtdBFknBAp3+AnA=",
