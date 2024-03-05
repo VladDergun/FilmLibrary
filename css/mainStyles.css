@@ -336,6 +336,7 @@ height: fit-content;
     font-size: 18px;
     font-family: sans-serif;
     word-spacing: 3px; /* Adjust this value as needed */
+    overflow-wrap: break-word;
 
 }
 .review-text {
